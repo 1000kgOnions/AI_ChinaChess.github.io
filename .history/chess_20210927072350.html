@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Cờ tướng IT4_K59_9</title>
+<link href="css/chess.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="box" id="box">
+</br>
+	<div class="chess_left">
+		<canvas id="chess">Xin lỗi, trình duyệt của bạn không hỗ trợ HTML5, vui lòng nâng cấp trình duyệt của bạn lên IE9, Firefox hoặc Google Chrome!</canvas>
+		<!-- <audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+		<audio src="audio/check.wav" id="checkAudio" preload="auto"></audio>
+		<audio src="audio/select.wav" id="selectAudio" preload="auto"></audio> -->
+		<div>
+			<div class="bn_box" id="bnBox">
+				<input type="button" name="offensivePlay" id="tyroPlay" value="Dễ" class="btn btn-warning"/>
+				<input type="button" name="offensivePlay" id="superPlay" value="Khó" class="btn btn-warning"/>
+
+				<!--
+			<input type="button" name="offensivePlay" id="offensivePlay" value="Bắt đầu với" />
+			<input type="button" name="defensivePlay" id="defensivePlay" value="Bắt đầu thủ công" />
+			-->
+				<input type="button" name="regret" id="regretBn" value="Lùi Bước Đánh" class="btn btn-warning"/>
+				<input type="button" name="billBn" id="billBn" value="棋谱" class="bn_box" class="btn btn-warning"/>
+				<input type="button" name="stypeBn" id="stypeBn" value="+/-" class="btn btn-warning"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="chess_right" id="chessRight">
+		<select name="billList" id="billList">
+		</select>
+		<ol id="billBox" class="bill_box">
+		</ol>
+	</div>
+	<div id="moveInfo" class="move_info"></div>
+</div>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/play.js"></script>
+<script type="text/javascript" src="js/AI.js"></script>
+<script type="text/javascript" src="js/bill.js"></script>
+<script type="text/javascript" src="js/gambit.js"></script>
+</div>
+</body>
+</html>
